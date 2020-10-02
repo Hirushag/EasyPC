@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Easy PC</string>
+    <string name="welcome">Welcome to EASY PC</string>
+    <string name="btn1">BUILD A PC</string>
+    <string name="btn2">LAPTOPS</string>
+    <string name="btn3">SPARE PARTS</string>
+    <string name="cartbtn"></string>
+    <string name="buildpc">Let\'s Bulid a PC</string>
+    .
+    <string name="casing">01. Choose Your Casing</string>
+    <string name="motherboard">02. Choose Your Motherboard </string>
+    <string name="processor">03. Choose Your Procesor</string>
+    <string name="ram">04. Choose Your RAM</string>
+    <string name="ssd">05. Choose Your SSD</string>
+    <string name="hard">06. Choose Your Hard Disk</string>
+    <string name="power">07. Choose Your Power Supply</string>
+    <string name="vga">08. Choose Your VGA</string>
+    <string name="managepc">Manage PC</string>
+    <string name="managepcbtn1">Add PC Parts</string>
+    <string name="managepcbtn2">View PC Parts</string>
+    <string name="insertpcparts">Insert PC Parts</string>
+    <string name="insertpcpartsform1">Part :</string>
+    <string name="insertpcpartsform2">Brand :</string>
+    <string name="insertpcpartsform3">Model :</string>
+    <string name="insertpcpartsform4">Price :</string>
+    <string name="insertpcpartsform5">Image :</string>
+    <string name="insertpcpartsformsubmit">INSERT PC PART</string>
+    <string name="pcback">PC Parts List</string>
+
+    <array name="parts">
+        <item>Casing</item>
+        <item>Processor</item>
+        <item>RAM</item>
+        <item>SSD</item>
+        <item>Hard Disk</item>
+        <item>Motherboard</item>
+        <item>VGA</item>
+        <item>Power Supply</item>
+    </array>
+
+
+</resources>

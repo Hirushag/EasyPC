@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "245269742148",
+    "firebase_url": "https://easy-pc-cf63d.firebaseio.com",
+    "project_id": "easy-pc-cf63d",
+    "storage_bucket": "easy-pc-cf63d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245269742148:android:bb4514cc4d818ecf21b211",
+        "android_client_info": {
+          "package_name": "com.example.easypc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "245269742148-53f6e1laju4n6epefmiir4fosh3j0rqf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCk_jgpoxXyEZ5keyvbL-2B_tC03wEKUkE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "245269742148-53f6e1laju4n6epefmiir4fosh3j0rqf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
