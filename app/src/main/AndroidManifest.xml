@@ -9,8 +9,10 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Manage_pc_back"></activity>
-        <activity android:name=".insert_pc_parts"></activity>
+        <activity android:name=".PC_Parts_Cus">
+        </activity>
+        <activity android:name=".Manage_pc_back" />
+        <activity android:name=".insert_pc_parts" />
         <activity android:name=".manage_pc">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

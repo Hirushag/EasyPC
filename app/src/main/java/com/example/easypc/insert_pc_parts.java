@@ -6,19 +6,15 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ContentResolver;
-import android.content.Context;
 import android.content.Intent;
-import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
-import android.provider.MediaStore;
 import android.view.View;
 import android.webkit.MimeTypeMap;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -31,7 +27,6 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.StorageTask;
 
-import java.util.ArrayList;
 import java.util.List;
 
 
@@ -47,7 +42,7 @@ public class insert_pc_parts extends AppCompatActivity {
 
 
     DatabaseReference reff;
-    insert_pc_parts_model insertPcPartsModel;
+    PC_MODEL pc_model;
     long maxid = 0;
 
     @Override
@@ -66,22 +61,22 @@ public class insert_pc_parts extends AppCompatActivity {
         choose = (Button) findViewById(R.id.choose);
         storeReff = FirebaseStorage.getInstance().getReference("Images");
 
-        insertPcPartsModel = new insert_pc_parts_model();
+        pc_model = new PC_MODEL();
         reff = FirebaseDatabase.getInstance().getReference().child("PC_PARTS");
-
 
         reff.addValueEventListener(new ValueEventListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                if (dataSnapshot.exists())
-                    maxid = (dataSnapshot.getChildrenCount());
-            }
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
 
+                    if (snapshot.exists())
+                    maxid = (snapshot.getChildrenCount());
+            }
             @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
+            public void onCancelled(@NonNull DatabaseError error) {
 
             }
         });
+
 
         choose.setOnClickListener(new View.OnClickListener() {
 
@@ -95,18 +90,19 @@ public class insert_pc_parts extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+
                 String InsertPart = spin.getSelectedItem().toString().trim();
                 String InsertBrand = brand.getText().toString().trim();
                 String InsertModel = model.getText().toString().trim();
-                float InsertPrice = Float.parseFloat(price.getText().toString().trim());
+                String InsertPrice = price.getText().toString().trim();
                 String InsertImage = System.currentTimeMillis()+ "." +getExtension(imagePath);
 
-                insertPcPartsModel.setPart(InsertPart);
-                insertPcPartsModel.setBrand(InsertBrand);
-                insertPcPartsModel.setModel(InsertModel);
-                insertPcPartsModel.setPrice(InsertPrice);
-                insertPcPartsModel.setImageID(InsertImage);
-                reff.child(String.valueOf(maxid + 1)).setValue(insertPcPartsModel);
+                pc_model.setPart(InsertPart);
+                pc_model.setBrand(InsertBrand);
+                pc_model.setModel(InsertModel);
+                pc_model.setPrice(InsertPrice);
+                pc_model.setImageID(InsertImage);
+                reff.child(String.valueOf(maxid + 1)).setValue(pc_model);
 
                 StorageReference ref = storeReff.child(InsertImage);
                 uploadTask = ref.putFile(imagePath);

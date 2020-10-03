@@ -29,7 +29,7 @@ import java.util.List;
 public class Manage_pc_back extends AppCompatActivity {
 
     ListView PClist;
-    List<insert_pc_parts_model> pcList;
+    List<PC_MODEL> pcList;
 
     DatabaseReference reff;
 
@@ -50,7 +50,7 @@ public class Manage_pc_back extends AppCompatActivity {
 
                 for (DataSnapshot PCSnap : snapshot.getChildren()) {
 
-                    insert_pc_parts_model insertPcPartsModel = PCSnap.getValue(insert_pc_parts_model.class);
+                    PC_MODEL insertPcPartsModel = PCSnap.getValue(PC_MODEL.class);
                     pcList.add(insertPcPartsModel);
 
                 }
@@ -71,7 +71,7 @@ public class Manage_pc_back extends AppCompatActivity {
             @Override
             public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-                insert_pc_parts_model updateModel = pcList.get(i);
+                PC_MODEL updateModel = pcList.get(i);
                 showUpdatePC(updateModel.getId(),updateModel.getPart(),updateModel.getBrand(),updateModel.getModel(),updateModel.getPrice());
 
                 return false;
@@ -79,7 +79,7 @@ public class Manage_pc_back extends AppCompatActivity {
         });
     }
 
-    private void showUpdatePC(final String id,String parts, String brand, String model, float price ){
+    private void showUpdatePC(final String id,String parts, String brand, String model, String price ){
 
          final AlertDialog.Builder updateDisplay = new AlertDialog.Builder(this);
         LayoutInflater inflater =getLayoutInflater();
@@ -103,7 +103,7 @@ public class Manage_pc_back extends AppCompatActivity {
                 String part = partUpdate.getSelectedItem().toString();
                 String brand = brandUpdate.getText().toString().trim();
                 String model = modelUpdate.getText().toString().trim();
-                float price = Float.parseFloat(priceUpdate.getText().toString());
+                String price=  priceUpdate.getText().toString();
 
                 updatePC(id,part,brand,model,price);
                 alertDialog.dismiss();
@@ -113,10 +113,11 @@ public class Manage_pc_back extends AppCompatActivity {
 
     }
 
-    private boolean updatePC(String id,String part ,String brand ,String model ,float price){
+    private boolean updatePC(String id,String part ,String brand ,String model ,String price){
 
-       DatabaseReference Dreff = FirebaseDatabase.getInstance().getReference().child("PC_PARTS");
-        insert_pc_parts_model UpdatePC = new insert_pc_parts_model(id,part,brand,model,price);
+
+       DatabaseReference Dreff = FirebaseDatabase.getInstance().getReference("PC_PARTS").child(id);
+        PC_MODEL UpdatePC = new PC_MODEL(id,part,brand,model,price);
         Dreff.setValue(UpdatePC);
 
         Toast.makeText(this,"Updated!",Toast.LENGTH_LONG).show();

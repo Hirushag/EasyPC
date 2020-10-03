@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -17,9 +16,9 @@ import java.util.List;
 public class PC_parts_List extends ArrayAdapter {
 
     private Activity mContext;
-    List<insert_pc_parts_model> pcPartsList;
+    List<PC_MODEL> pcPartsList;
 
-    public PC_parts_List(Activity mContext, List<insert_pc_parts_model> pcPartsList) {
+    public PC_parts_List(Activity mContext, List<PC_MODEL> pcPartsList) {
         super(mContext, R.layout.list_pc, pcPartsList);
         this.mContext = mContext;
         this.pcPartsList = pcPartsList;
@@ -39,7 +38,7 @@ public class PC_parts_List extends ArrayAdapter {
         TextView priceread = listItems.findViewById(R.id.priceread);
 
 
-        final insert_pc_parts_model insertPcPartsModel = pcPartsList.get(position);
+        final PC_MODEL insertPcPartsModel = pcPartsList.get(position);
 
         partread.setText(insertPcPartsModel.getPart());
         brandread.setText(insertPcPartsModel.getBrand());
