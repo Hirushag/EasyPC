@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".manage_pc">
+    android:background="@drawable/image10"
+    tools:context=".manage_laptops">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="417dp"
         android:layout_height="102dp"
-        android:background="@android:color/holo_green_dark"
+        android:background="@android:color/darker_gray"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -22,41 +23,42 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="119dp"
-        android:layout_height="84dp"
+        android:layout_width="154dp"
+        android:layout_height="118dp"
+        android:contentDescription="TODO"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/logo"
-        android:contentDescription="TODO" />
+        app:srcCompat="@drawable/logo" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="397dp"
         android:layout_height="127dp"
-        android:fontFamily="@font/sweetfig"
-        android:text="@string/managepc"
+        android:fontFamily="@font/montserratbold"
+        android:text="@string/managelaptop"
         android:textAlignment="center"
-        android:textColor="@android:color/background_dark"
-        android:textSize="20dp"
+        android:textColor="@android:color/background_light"
+        android:textSize="60sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.021"
-        tools:ignore="@string/managepc" />
+        app:layout_constraintVertical_bias="0.121"
+        tools:ignore="@string/managelaptop" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/addSpButton"
         android:layout_width="400dp"
         android:layout_height="wrap_content"
-        android:background="@android:color/holo_red_light"
+        android:background="@android:color/holo_blue_dark"
         android:fontFamily="@font/montserratbold"
-        android:text="@string/managepcbtn1"
+        android:text="@string/managelapbtn1"
         android:textColor="@android:color/background_dark"
         android:textSize="20dp"
         android:textStyle="bold"
@@ -64,31 +66,29 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.249"
-        android:onClick="add"/>
+        app:layout_constraintVertical_bias="0.29000002" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/viewSpButton"
         android:layout_width="400dp"
         android:layout_height="wrap_content"
-        android:background="@android:color/holo_red_light"
+        android:background="@android:color/holo_blue_dark"
         android:fontFamily="@font/montserratbold"
-        android:text="@string/managepcbtn2"
+        android:text="@string/managelapbtn2"
         android:textColor="@android:color/background_dark"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.4"
-        android:onClick="onClick"/>
+        app:layout_constraintVertical_bias="0.49" />
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="26dp"
-        android:layout_height="26dp"
+        android:layout_width="38dp"
+        android:layout_height="35dp"
         android:background="@drawable/user"
         android:text="@string/cartbtn"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -98,11 +98,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.007" />
 
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar2"
         android:layout_width="413dp"
         android:layout_height="43dp"
-        android:background="@android:color/holo_green_light"
+        android:background="@android:color/darker_gray"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -110,12 +111,11 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="1.0"
-        />
+        app:layout_constraintVertical_bias="1.0" />
 
     <SearchView
-        android:layout_width="34dp"
-        android:layout_height="34dp"
+        android:layout_width="50dp"
+        android:layout_height="42dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/toolbar2"
         app:layout_constraintStart_toStartOf="parent"

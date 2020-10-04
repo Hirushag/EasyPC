@@ -9,19 +9,17 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PC_Parts_Cus">
-        </activity>
-        <activity android:name=".Manage_pc_back" />
-        <activity android:name=".insert_pc_parts" />
-        <activity android:name=".manage_pc">
+        <activity android:name=".manage_laptops" />
+        <activity android:name=".insertLaptop" />
+        <activity android:name=".admin_retrieve_laptop" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".build_pc" />
-        <activity android:name=".MainActivity" />
+
     </application>
 
 </manifest>

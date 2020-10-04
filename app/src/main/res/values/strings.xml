@@ -6,7 +6,7 @@
     <string name="btn3">SPARE PARTS</string>
     <string name="cartbtn"></string>
     <string name="buildpc">Let\'s Bulid a PC</string>
-    .
+
     <string name="casing">01. Choose Your Casing</string>
     <string name="motherboard">02. Choose Your Motherboard </string>
     <string name="processor">03. Choose Your Procesor</string>
@@ -26,6 +26,7 @@
     <string name="insertpcpartsform5">Image :</string>
     <string name="insertpcpartsformsubmit">INSERT PC PART</string>
     <string name="pcback">PC Parts List</string>
+    <string name="chooseImage">image</string>
 
     <array name="parts">
         <item>Casing</item>
@@ -38,5 +39,52 @@
         <item>Power Supply</item>
     </array>
 
+    <string name="laptop">LAPTOPS</string>
+    <string name="asus">ASUS LAPTOPS</string>
+    <string name="dell">DELL LAPTOPS </string>
+    <string name="apple">APPLE LAPTOPS</string>
+    <string name="hp">HP LAPTOPS</string>
+    <string name="acer">ACER LAPTOPS</string>
+    <string name="lenovo">LENOVO LAPTOPS</string>
+    <string name="msi">MSI LAPTOPS</string>
+    <string name="managelaptop">Manage Laptops</string>
+    <string name="managelapbtn1">Add Laptops</string>
+    <string name="managelapbtn2">View Laptops</string>
+    <string name="insertlap">Add Laptop</string>
+    <string name="insertlapform1">Brand :</string>
+    <string name="insertlapform2">Model :</string>
+    <string name="insertlapform3">Price :</string>
+    <string name="insertlapform4">Description :</string>
+    <string name="insertlapform5">Image :</string>
+    <string name="insertlapformsubmit">ADD LAPTOP</string>
+    <string name="laptopback">Laptop List</string>
+    brandreadlap
+    <string name="brandreadlap">Brand: </string>
+    <string name="modelreadlap">Model: </string>
+    <string name="pricereadlap">Price: </string>
+    <string name="descriptionreadlap">Description: </string>
+
+
+    <array name="brand">
+        <item>ASUS</item>
+        <item>DELL</item>
+        <item>APPLE</item>
+        <item>HP</item>
+        <item>ACER</item>
+        <item>LENOVO</item>
+        <item>MSI</item>
+    </array>
+
+    <string name="managesp">Manage Spare Parts</string>
+    <string name="managespbtn1">Add Spare Parts</string>
+    <string name="managespbtn2">View Spare Parts</string>
+    <string name="insertspparts">Insert Spare Parts</string>
+    <string name="insertspform1">Part :</string>
+    <string name="insertspform2">Brand :</string>
+    <string name="insertspform3">Model :</string>
+    <string name="insertspform4">Price :</string>
+    <string name="insertspform5">Image :</string>
+    <string name="insertspformsubmit">INSERT PC PART</string>
+    <string name="spback">PC Parts List</string>
 
 </resources>

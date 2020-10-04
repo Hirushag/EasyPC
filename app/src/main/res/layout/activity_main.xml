@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D7CCC8"
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="417dp"
         android:layout_height="102dp"
-        android:background="@android:color/holo_green_dark"
+        android:background="#616161"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -22,49 +23,54 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="119dp"
-        android:layout_height="84dp"
+        android:layout_width="137dp"
+        android:layout_height="101dp"
+        android:contentDescription="TODO"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.025"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/logo"
-        android:contentDescription="TODO" />
+        tools:srcCompat="@drawable/easypc2" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="144dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="145dp"
         android:contentDescription="TODO"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.991"
         app:srcCompat="@drawable/mainimage" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="397dp"
         android:layout_height="127dp"
-        android:fontFamily="monospace"
+        android:fontFamily="@font/montserratbold"
         android:text="@string/welcome"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="35dp"
+        android:textSize="31sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.501"
         tools:ignore="@string/welcome" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="397dp"
-        android:layout_height="57dp"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
         android:text="@string/btn1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -72,20 +78,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView"
         app:layout_constraintVertical_bias="0.273"
-        android:textColor="@android:color/background_dark"
-        android:background="@android:color/holo_red_light"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/custom_button"
         android:fontFamily="@font/montserratbold"
         android:textStyle="bold"
-        android:textSize="20dp"/>
+        android:textSize="20dp"
+        tools:ignore="OnClick" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="397dp"
-        android:layout_height="57dp"
-        android:background="@android:color/holo_red_light"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:background="@drawable/custom_button"
         android:fontFamily="@font/montserratbold"
         android:text="@string/btn2"
-        android:textColor="@android:color/background_dark"
+        android:textColor="#FFFFFF"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -96,12 +103,12 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="397dp"
-        android:layout_height="57dp"
-        android:background="@android:color/holo_red_light"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:background="@drawable/custom_button"
         android:fontFamily="@font/montserratbold"
         android:text="@string/btn3"
-        android:textColor="@android:color/background_dark"
+        android:textColor="#FFFFFF"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -114,7 +121,7 @@
         android:id="@+id/toolbar2"
         android:layout_width="413dp"
         android:layout_height="43dp"
-        android:background="@android:color/holo_green_light"
+        android:background="#616161"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -127,29 +134,29 @@
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="36dp"
-        android:layout_height="31dp"
-        android:background="@drawable/cart"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/cart1"
         android:text="@string/cartbtn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.912"
+        app:layout_constraintHorizontal_bias="0.845"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.007" />
+        app:layout_constraintVertical_bias="0.021" />
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="26dp"
-        android:layout_height="26dp"
-        android:background="@drawable/user" 
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/user1"
         android:text="@string/cartbtn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.981"
+        app:layout_constraintHorizontal_bias="0.958"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.007" />
+        app:layout_constraintVertical_bias="0.022" />
 
     <SearchView
         android:layout_width="34dp"
@@ -158,4 +165,5 @@
         app:layout_constraintEnd_toEndOf="@+id/toolbar2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/toolbar2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
