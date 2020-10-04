@@ -9,7 +9,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button button2;
+    Button button2,button,button3;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +22,24 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, manage_laptops.class);
+                startActivity(intent);
+            }
+        });
+
+        button = (Button)findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, user_retrieve_pc.class);
+                startActivity(intent);
+            }
+        });
+
+        button3 = (Button)findViewById(R.id.button3);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, user_retrieve_spare_parts.class);
                 startActivity(intent);
             }
         });
