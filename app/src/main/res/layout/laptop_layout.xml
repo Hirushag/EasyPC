@@ -12,8 +12,9 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="162dp"
-        android:layout_margin="20dp">
+        android:layout_height="188dp"
+        android:layout_margin="20dp"
+        android:background="#D7CCC8">
 
         <TextView
             android:id="@+id/AtextView2ID_formal"
@@ -25,10 +26,10 @@
             android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.254"
+            app:layout_constraintHorizontal_bias="0.248"
             app:layout_constraintStart_toEndOf="@+id/textView20"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.368" />
+            app:layout_constraintVertical_bias="0.214" />
 
         <TextView
             android:id="@+id/AtextView2ID_forma3"
@@ -40,10 +41,10 @@
             android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.261"
+            app:layout_constraintHorizontal_bias="0.276"
             app:layout_constraintStart_toEndOf="@+id/textView21"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.715" />
+            app:layout_constraintVertical_bias="0.429" />
 
         <TextView
             android:id="@+id/AtextView1ID_formal"
@@ -87,7 +88,7 @@
             app:layout_constraintHorizontal_bias="0.94"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintVertical_bias="0.885" />
 
         <TextView
             android:id="@+id/textView17"
@@ -110,10 +111,10 @@
             android:textColor="#070707"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/AtextView1ID_formal"
-            app:layout_constraintHorizontal_bias="0.292"
+            app:layout_constraintHorizontal_bias="0.314"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.412" />
+            app:layout_constraintVertical_bias="0.295" />
 
         <TextView
             android:id="@+id/textView21"
@@ -126,7 +127,7 @@
             app:layout_constraintHorizontal_bias="0.291"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.664" />
+            app:layout_constraintVertical_bias="0.449" />
 
         <TextView
             android:id="@+id/textView23"
@@ -139,7 +140,7 @@
             app:layout_constraintHorizontal_bias="0.28"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.888" />
+            app:layout_constraintVertical_bias="0.627" />
 
         <TextView
             android:id="@+id/AtextView2ID_forma4"
@@ -151,10 +152,10 @@
             android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.212"
+            app:layout_constraintHorizontal_bias="0.207"
             app:layout_constraintStart_toEndOf="@+id/textView23"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintVertical_bias="0.677" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
