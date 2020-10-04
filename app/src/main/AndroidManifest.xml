@@ -20,12 +20,22 @@
         <activity android:name=".insertSpareParts" > </activity>
         <activity android:name=".manage_pc" />
         <activity android:name=".manage_spare_parts" />
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".Registration" />
+        <activity android:name=".PCActivity"></activity>
+        <activity android:name=".Admin" />
+        <activity android:name=".UpdateProfile" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".Login" />
+        <activity android:name=".FirstActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity">
+
         </activity>
 
     </application>
