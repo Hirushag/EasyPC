@@ -36,7 +36,7 @@ public class admin_retrieve_laptop extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_retrieve_laptop);
-        text1 = findViewById(R.id.formal_user_button);
+        text1 = findViewById(R.id.Acard_image_formal);
         delete =findViewById(R.id.delete);
         update = findViewById(R.id.update_upload);
         recyclerView = findViewById(R.id.recyclerView);
