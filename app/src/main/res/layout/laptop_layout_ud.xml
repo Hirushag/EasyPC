@@ -12,8 +12,9 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="160dp"
-        android:layout_margin="20dp">
+        android:layout_height="191dp"
+        android:layout_margin="20dp"
+        android:background="#D7CCC8">
 
         <TextView
             android:id="@+id/textView17"
@@ -98,7 +99,7 @@
             tools:srcCompat="@tools:sample/avatars" />
 
         <Button
-            android:id="@+id/add_cart"
+            android:id="@+id/update"
             android:layout_width="100dp"
             android:layout_height="30dp"
             android:background="@color/design_default_color_secondary_variant"
@@ -113,7 +114,7 @@
             app:layout_constraintVertical_bias="1.0" />
 
         <Button
-            android:id="@+id/add_cart2"
+            android:id="@+id/delete"
             android:layout_width="100dp"
             android:layout_height="30dp"
             android:background="@color/design_default_color_error"

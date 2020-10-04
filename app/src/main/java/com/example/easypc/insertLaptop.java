@@ -74,7 +74,7 @@ public class insertLaptop extends AppCompatActivity {
                 laptopMem.setModel(model.getText().toString());
                 laptopMem.setBrand(brand.getText().toString());
                 laptopMem.setDescription(description.getText().toString());
-                reff.child(String.valueOf(maxid+1)).setValue(laptopMem);
+                reff.child(brand.getText().toString()).setValue(laptopMem);
                 Toast.makeText(insertLaptop.this,"laptops added successfully",Toast.LENGTH_LONG).show();
                 Fileupload();
             }

@@ -77,7 +77,7 @@ public class insertPc extends AppCompatActivity {
                 pcMem.setModel(model.getText().toString());
                 pcMem.setBrand(brand.getText().toString());
                 pcMem.setDescription(description.getText().toString());
-                reff.child(String.valueOf(maxid+1)).setValue(pcMem);
+                reff.child(part.getText().toString()).setValue(pcMem);
                 Toast.makeText(insertPc.this,"Pc parts added successfully",Toast.LENGTH_LONG).show();
                 Fileupload();
             }
