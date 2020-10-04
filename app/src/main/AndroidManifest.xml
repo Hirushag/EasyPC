@@ -12,10 +12,14 @@
         <activity android:name=".manage_laptops" />
         <activity android:name=".insertLaptop" />
         <activity android:name=".admin_retrieve_laptop" />
+        <activity android:name=".admin_retrieve_spare_parts" />
+        <activity android:name=".user_retrieve_spare_parts" />
         <activity android:name=".admin_retrieve_pc" />
         <activity android:name=".user_retrieve_pc" />
         <activity android:name=".insertPc" > </activity>
+        <activity android:name=".insertSpareParts" > </activity>
         <activity android:name=".manage_pc" />
+        <activity android:name=".manage_spare_parts" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
