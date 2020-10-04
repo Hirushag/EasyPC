@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, manage_laptops.class);
+                Intent intent = new Intent(MainActivity.this, user_retrieve_laptop.class);
                 startActivity(intent);
             }
         });

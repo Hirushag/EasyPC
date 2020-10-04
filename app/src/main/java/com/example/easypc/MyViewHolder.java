@@ -20,6 +20,5 @@ public class MyViewHolder extends RecyclerView.ViewHolder {
         getTextViewName2=itemView.findViewById(R.id.AtextView2ID_forma4);
         profilePic = itemView.findViewById(R.id.Acard_image_formal);
 
-
     }
 }

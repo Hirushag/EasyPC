@@ -12,6 +12,7 @@
         <activity android:name=".manage_laptops" />
         <activity android:name=".insertLaptop" />
         <activity android:name=".admin_retrieve_laptop" />
+        <activity android:name=".user_retrieve_laptop" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
