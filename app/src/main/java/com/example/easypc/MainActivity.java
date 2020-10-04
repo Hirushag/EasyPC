@@ -41,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, user_retrieve_spare_parts.class);
                 startActivity(intent);
+
+
             }
         });
 
