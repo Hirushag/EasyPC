@@ -27,12 +27,12 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.StorageTask;
 import com.google.firebase.storage.UploadTask;
 
-public class insertLaptop extends AppCompatActivity {
+public class insertSpareParts extends AppCompatActivity {
 
-    EditText price,model,brand,description;
+    EditText part,price,model,brand,description;
     Button submit,choose;
     DatabaseReference reff;
-    laptops laptopMem;
+    spareparts spareMem;
     ImageView img;
     StorageReference StorageRef;
     long maxid;
@@ -42,17 +42,18 @@ public class insertLaptop extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_insert_laptop);
+        setContentView(R.layout.activity_insert_spare_parts);
         StorageRef = FirebaseStorage.getInstance().getReference("images");
         model = findViewById(R.id.formal_addm);
+        part = findViewById(R.id.formal_addpa);
         price = findViewById(R.id.formal_addp);
         brand = findViewById(R.id.formal_addb);
         description = findViewById(R.id.formal_addd);
         submit = findViewById(R.id.formal_submit);
-        laptopMem =new laptops();
+        spareMem =new spareparts();
         choose = findViewById(R.id.formal_submit2);
         img = findViewById(R.id.formal_addimg);
-        reff = FirebaseDatabase.getInstance().getReference().child("member");
+        reff = FirebaseDatabase.getInstance().getReference().child("member3");
 
         reff.addValueEventListener(new ValueEventListener() {
             @Override
@@ -70,12 +71,13 @@ public class insertLaptop extends AppCompatActivity {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                laptopMem.setPrice(price.getText().toString());
-                laptopMem.setModel(model.getText().toString());
-                laptopMem.setBrand(brand.getText().toString());
-                laptopMem.setDescription(description.getText().toString());
-                reff.child(brand.getText().toString()).setValue(laptopMem);
-                Toast.makeText(insertLaptop.this,"laptops added successfully",Toast.LENGTH_LONG).show();
+                spareMem.setPrice(price.getText().toString());
+                spareMem.setPart(part.getText().toString());
+                spareMem.setModel(model.getText().toString());
+                spareMem.setBrand(brand.getText().toString());
+                spareMem.setDescription(description.getText().toString());
+                reff.child(String.valueOf(maxid+1)).setValue(spareMem);
+                Toast.makeText(insertSpareParts.this,"Pc parts added successfully",Toast.LENGTH_LONG).show();
                 Fileupload();
             }
         });
@@ -103,7 +105,7 @@ public class insertLaptop extends AppCompatActivity {
                 .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                     @Override
                     public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                        Toast.makeText(insertLaptop.this,"Image upload successfully",Toast.LENGTH_LONG).show();
+                        Toast.makeText(insertSpareParts.this,"Image upload successfully",Toast.LENGTH_LONG).show();
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {
