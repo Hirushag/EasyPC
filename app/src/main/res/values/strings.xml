@@ -86,5 +86,13 @@
     <string name="insertspform5">Image :</string>
     <string name="insertspformsubmit">INSERT PC PART</string>
     <string name="spback">PC Parts List</string>
+    <string name="price">Price</string>
+    <string name="update">UPDATE</string>
+    <string name="choose">choose</string>
+    <string name="update_laptops">Update Laptops</string>
+    <string name="image">Image</string>
+    <string name="model">Model</string>
+    <string name="description">Description</string>
+    <string name="todo">TODO</string>
 
 </resources>

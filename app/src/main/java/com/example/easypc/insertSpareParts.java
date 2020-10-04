@@ -76,7 +76,7 @@ public class insertSpareParts extends AppCompatActivity {
                 spareMem.setModel(model.getText().toString());
                 spareMem.setBrand(brand.getText().toString());
                 spareMem.setDescription(description.getText().toString());
-                reff.child(String.valueOf(maxid+1)).setValue(spareMem);
+                reff.child(brand.getText().toString()).setValue(spareMem);
                 Toast.makeText(insertSpareParts.this,"Pc parts added successfully",Toast.LENGTH_LONG).show();
                 Fileupload();
             }
