@@ -13,6 +13,7 @@
         <activity android:name=".insertLaptop" />
         <activity android:name=".admin_retrieve_laptop" />
         <activity android:name=".admin_retrieve_pc" />
+        <activity android:name=".user_retrieve_pc" />
         <activity android:name=".insertPc" > </activity>
         <activity android:name=".manage_pc" />
         <activity android:name=".MainActivity">
