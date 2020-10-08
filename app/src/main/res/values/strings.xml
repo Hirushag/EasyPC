@@ -104,4 +104,10 @@
     <string name="reg">REGISTER</string>
     <string name="cart"></string>
 
+    <array name="Type">
+        <item>PC</item>
+        <item>LAPTOPS</item>
+        <item>SPARE PARTS</item>
+    </array>
+
 </resources>
