@@ -37,7 +37,7 @@ public class admin_retrieve_pc extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_retrieve_pc);
         text1 = findViewById(R.id.Acard_image_formal);
-        delete =findViewById(R.id.delete);
+        delete =findViewById(R.id.dt);
         update = findViewById(R.id.update_upload);
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
@@ -64,6 +64,20 @@ public class admin_retrieve_pc extends AppCompatActivity {
                         pc.add(model);
 
                         Intent intent = new Intent(admin_retrieve_pc.this, update_pc.class);
+                        intent.putExtra("test", model1);
+                        intent.putExtra("test2", price1);
+                        intent.putExtra("test3", description1);
+                        startActivity(intent);
+                    }
+                });
+
+                holder.delete.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        pc = new ArrayList<>();
+                        pc.add(model);
+
+                        Intent intent = new Intent(admin_retrieve_pc.this, delete_pc.class);
                         intent.putExtra("test", model1);
                         intent.putExtra("test2", price1);
                         intent.putExtra("test3", description1);

@@ -45,8 +45,8 @@ public class update_pc extends AppCompatActivity {
         admin_retrieve_pc.pc.remove(0);
 
         final String model = getIntent().getStringExtra("test");
-        final String price = getIntent().getStringExtra("test1");
-        final String description = getIntent().getStringExtra("test2");
+        final String price = getIntent().getStringExtra("test2");
+        final String description = getIntent().getStringExtra("test3");
         updatem.setHint(model);
         updatep.setHint(price);
         updated.setHint(description);
