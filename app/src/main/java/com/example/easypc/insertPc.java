@@ -77,9 +77,14 @@ public class insertPc extends AppCompatActivity {
                 pcMem.setModel(model.getText().toString());
                 pcMem.setBrand(brand.getText().toString());
                 pcMem.setDescription(description.getText().toString());
-                reff.child(part.getText().toString()).setValue(pcMem);
+                reff.child(brand.getText().toString()).setValue(pcMem);
                 Toast.makeText(insertPc.this,"Pc parts added successfully",Toast.LENGTH_LONG).show();
                 Fileupload();
+
+                Intent intent = new Intent(insertPc.this, manage_pc.class);
+                startActivity(intent);
+
+
             }
         });
 
@@ -135,4 +140,20 @@ public class insertPc extends AppCompatActivity {
             img.setImageURI(imguri);
         }
     }
+
+
+
+
+    public void home(View view) {
+
+        ImageView image = findViewById(R.id.logo);
+        image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(insertPc.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
+
 }

@@ -70,6 +70,9 @@ public class update_laptops extends AppCompatActivity {
                 databaseReference.child(laptops.getBrand()).setValue(laptops);
                 Log.d("auth", "updated");
 
+                Intent intent = new Intent(update_laptops.this, admin_retrieve_laptop.class);
+                startActivity(intent);
+
             }
         });
 

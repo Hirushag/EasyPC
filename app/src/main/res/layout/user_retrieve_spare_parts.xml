@@ -40,16 +40,16 @@
         android:layout_width="407dp"
         android:layout_height="52dp"
         android:fontFamily="@font/montserratbold"
-        android:textAlignment="center"
-        android:textSize="40dp"
         android:text="SPARE PARTS"
+        android:textAlignment="center"
         android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.22" />
+        app:layout_constraintVertical_bias="0.192" />
 
     <Button
         android:id="@+id/button4"
@@ -81,8 +81,8 @@
     <androidx.recyclerview.widget.RecyclerView
 
         android:id="@+id/recyclerView"
-        android:layout_width="359dp"
-        android:layout_height="423dp"
+        android:layout_width="363dp"
+        android:layout_height="409dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

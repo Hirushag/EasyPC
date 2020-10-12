@@ -75,7 +75,7 @@ public class admin_retrieve_pc extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
 
-                        ref.child(model.getPart()).removeValue();
+                        ref.child(model.getBrand()).removeValue();
                     }
                 });
 
@@ -93,5 +93,17 @@ public class admin_retrieve_pc extends AppCompatActivity {
         adapter.startListening();
         recyclerView.setAdapter(adapter);
 
+    }
+
+    public void home(View view) {
+
+        ImageView image = findViewById(R.id.logo);
+        image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(admin_retrieve_pc.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

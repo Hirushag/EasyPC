@@ -64,8 +64,8 @@
 
         <EditText
             android:id="@+id/txtDescription"
-            android:layout_width="250sp"
-            android:layout_height="100sp"
+            android:layout_width="351dp"
+            android:layout_height="52dp"
             android:background="@color/common_google_signin_btn_text_dark_default"
             android:ems="10"
             android:gravity="center"
@@ -75,10 +75,10 @@
             android:textColorHint="@color/colorPrimaryDark"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintHorizontal_bias="0.391"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.551" />
+            app:layout_constraintVertical_bias="0.473" />
 
         <Button
             android:id="@+id/submitFeedback"
@@ -90,49 +90,35 @@
             android:fontFamily="@font/montserratbold"
             android:text="SUBMIT"
             android:textAllCaps="false"
-            android:textColor="?android:attr/colorActivatedHighlight"
+            android:textColor="?android:attr/colorBackground"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.678">
+            app:layout_constraintVertical_bias="0.567">
 
         </Button>
 
         <TextView
             android:id="@+id/textView16"
-            android:layout_width="342dp"
-            android:layout_height="73dp"
+            android:layout_width="166dp"
+            android:layout_height="29dp"
             android:text="Give your Feedback"
             android:textColor="@color/design_default_color_on_secondary"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.173"
+            app:layout_constraintHorizontal_bias="0.01"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.387" />
-
-        <TextView
-            android:id="@+id/textView17"
-            android:layout_width="341dp"
-            android:layout_height="127dp"
-            android:text="Overall,how did you feel about the service you recieved today,"
-            android:textColor="@color/design_default_color_error"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.171"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.481" />
+            app:layout_constraintVertical_bias="0.392" />
 
         <EditText
             android:id="@+id/txtBrand"
-            android:layout_width="251dp"
-            android:layout_height="33dp"
+            android:layout_width="378dp"
+            android:layout_height="34dp"
             android:background="@color/design_default_color_secondary_variant"
             android:ems="10"
             android:gravity="center_horizontal"
@@ -142,19 +128,19 @@
             android:textColorHint="@color/common_google_signin_btn_text_dark_focused"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintHorizontal_bias="0.515"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.3" />
+            app:layout_constraintVertical_bias="0.315" />
 
         <TextView
             android:id="@+id/textView15"
-            android:layout_width="227dp"
-            android:layout_height="67dp"
+            android:layout_width="162dp"
+            android:layout_height="55dp"
             android:fontFamily="@font/sweetfig"
             android:text="FEEDBACK"
-            android:textColor="@color/design_default_color_primary_dark"
-            android:textSize="14sp"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -163,7 +149,7 @@
 
         <Spinner
             android:id="@+id/spinnerType"
-            android:layout_width="250dp"
+            android:layout_width="377dp"
             android:layout_height="34dp"
             android:background="@android:color/darker_gray"
             android:entries="@array/Type"
@@ -171,19 +157,19 @@
             android:textAlignment="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.23" />
+            app:layout_constraintVertical_bias="0.241" />
 
         <ListView
             android:id="@+id/listViewFeedback"
-            android:layout_width="409dp"
-            android:layout_height="210dp"
+            android:layout_width="399dp"
+            android:layout_height="218dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.583"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintVertical_bias="0.883" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

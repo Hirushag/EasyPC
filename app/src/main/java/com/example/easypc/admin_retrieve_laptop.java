@@ -92,4 +92,16 @@ public class admin_retrieve_laptop extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
 
     }
+
+    public void home(View view) {
+
+        ImageView image = findViewById(R.id.logo);
+        image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(admin_retrieve_laptop.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
 }

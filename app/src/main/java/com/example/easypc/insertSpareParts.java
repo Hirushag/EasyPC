@@ -77,10 +77,14 @@ public class insertSpareParts extends AppCompatActivity {
                 spareMem.setBrand(brand.getText().toString());
                 spareMem.setDescription(description.getText().toString());
                 reff.child(brand.getText().toString()).setValue(spareMem);
-                Toast.makeText(insertSpareParts.this,"Pc parts added successfully",Toast.LENGTH_LONG).show();
+                Toast.makeText(insertSpareParts.this,"Spare part added successfully",Toast.LENGTH_LONG).show();
                 Fileupload();
+
+                Intent intent = new Intent(insertSpareParts.this, manage_spare_parts.class);
+                startActivity(intent);
             }
         });
+
 
         choose.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -133,5 +137,17 @@ public class insertSpareParts extends AppCompatActivity {
             imguri = data.getData();
             img.setImageURI(imguri);
         }
+    }
+
+    public void home(View view) {
+
+        ImageView image = findViewById(R.id.logo);
+        image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(insertSpareParts.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

@@ -1,5 +1,6 @@
 package com.example.easypc;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
@@ -7,6 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.Toast;
@@ -189,6 +191,18 @@ public class feedback extends AppCompatActivity {
         }else{
             Toast.makeText(this,"Enter a Description!!!",Toast.LENGTH_LONG).show();
         }
+    }
+
+    public void home(View view) {
+
+        ImageView image = findViewById(R.id.logo);
+        image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(feedback.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
 }

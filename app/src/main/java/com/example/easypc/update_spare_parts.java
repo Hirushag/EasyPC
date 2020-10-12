@@ -68,6 +68,9 @@ public class update_spare_parts extends AppCompatActivity {
                 databaseReference.child(spareparts.getBrand()).setValue(spareparts);
                 Log.d("auth", "updated");
 
+                Intent intent = new Intent(update_spare_parts.this, admin_retrieve_spare_parts.class);
+                startActivity(intent);
+
             }
         });
 

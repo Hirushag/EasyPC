@@ -1,9 +1,11 @@
 package com.example.easypc;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
@@ -25,6 +27,7 @@ public class user_retrieve_pc extends AppCompatActivity {
     private FirebaseRecyclerOptions<pc> options;
     private FirebaseRecyclerAdapter<pc, MyViewHolder2> adapter;
     private RecyclerView recyclerView;
+    Button cart;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,10 +35,13 @@ public class user_retrieve_pc extends AppCompatActivity {
         setContentView(R.layout.activity_admin_retrieve_pc);
         text1 = findViewById(R.id.Acard_image_formal);
         recyclerView = findViewById(R.id.recyclerView);
+        cart = findViewById(R.id.pay);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
+
         ref = FirebaseDatabase.getInstance().getReference("member2");
+
 
         options = new FirebaseRecyclerOptions.Builder<pc>().setQuery(ref, pc.class).build();
         adapter = new FirebaseRecyclerAdapter<pc, MyViewHolder2>(options) {
@@ -46,6 +52,7 @@ public class user_retrieve_pc extends AppCompatActivity {
                 holder.getTextViewName1.setText("" + model.getModel());
                 holder.getTextViewName2.setText("" + model.getPrice());
                 holder.getTextViewName3.setText("" + model.getDescription());
+
 
                 Picasso.get().load(model.getImage()).into(holder.profilePic);
             }
@@ -60,5 +67,6 @@ public class user_retrieve_pc extends AppCompatActivity {
         adapter.startListening();
         recyclerView.setAdapter(adapter);
 
-    }
+            }
+
 }

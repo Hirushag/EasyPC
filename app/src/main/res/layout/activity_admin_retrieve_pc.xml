@@ -53,29 +53,28 @@
         android:layout_width="407dp"
         android:layout_height="52dp"
         android:fontFamily="@font/montserratbold"
-        android:textSize="50dp"
+        android:text="PC"
         android:textAlignment="center"
-        android:text="BUILD PC"
         android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.215" />
-
+        app:layout_constraintVertical_bias="0.16" />
 
     <androidx.recyclerview.widget.RecyclerView
 
         android:id="@+id/recyclerView"
-        android:layout_width="359dp"
-        android:layout_height="423dp"
+        android:layout_width="371dp"
+        android:layout_height="368dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.73" />
+        app:layout_constraintVertical_bias="0.707" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar2"

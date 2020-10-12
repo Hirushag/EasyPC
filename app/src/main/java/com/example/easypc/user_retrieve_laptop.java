@@ -1,9 +1,11 @@
 package com.example.easypc;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
@@ -24,6 +26,7 @@ public class user_retrieve_laptop extends AppCompatActivity {
     private FirebaseRecyclerOptions<laptops> options;
     private FirebaseRecyclerAdapter<laptops, MyViewHolder>adapter;
     private RecyclerView recyclerView;
+    Button cart;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

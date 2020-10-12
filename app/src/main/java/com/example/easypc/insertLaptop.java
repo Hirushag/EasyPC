@@ -77,6 +77,9 @@ public class insertLaptop extends AppCompatActivity {
                 reff.child(brand.getText().toString()).setValue(laptopMem);
                 Toast.makeText(insertLaptop.this,"laptops added successfully",Toast.LENGTH_LONG).show();
                 Fileupload();
+
+                Intent intent = new Intent(insertLaptop.this, manage_laptops.class);
+                startActivity(intent);
             }
         });
 
@@ -131,5 +134,16 @@ public class insertLaptop extends AppCompatActivity {
             imguri = data.getData();
             img.setImageURI(imguri);
         }
+    }
+    public void home(View view) {
+
+        ImageView image = findViewById(R.id.logo);
+        image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(insertLaptop.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

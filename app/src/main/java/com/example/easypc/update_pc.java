@@ -66,6 +66,9 @@ public class update_pc extends AppCompatActivity {
                 databaseReference.child(pc.getBrand()).setValue(pc);
                 Log.d("auth", "updated");
 
+                Intent intent = new Intent(update_pc.this, admin_retrieve_pc.class);
+                startActivity(intent);
+
             }
         });
 
