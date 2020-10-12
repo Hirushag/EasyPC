@@ -69,6 +69,7 @@ public class admin_retrieve_spare_parts extends AppCompatActivity {
                     }
                 });
 
+
                 Picasso.get().load(model.getImage()).into(holder.profilePic);
             }
 

@@ -9,7 +9,6 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-              <activity android:name=".delete_pc"></activity>
         <activity android:name=".update_spare_parts" />
         <activity android:name=".manage_laptops" />
         <activity android:name=".insertLaptop" />
@@ -19,11 +18,13 @@
         <activity android:name=".user_retrieve_spare_parts" />
         <activity android:name=".admin_retrieve_pc" >
 
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
 
         </activity>
         <activity android:name=".user_retrieve_pc" />
@@ -40,6 +41,7 @@
         <activity android:name=".ProfileActivity" />
         <activity android:name=".Login" />
         <activity android:name=".FirstActivity">
+
 
         </activity>
         <activity android:name=".feedback" />
