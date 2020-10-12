@@ -37,6 +37,8 @@ public class admin_retrieve_spare_parts extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_retrieve_spare_parts);
         text1 = findViewById(R.id.Acard_image_formal);
+        delete =findViewById(R.id.delete);
+        update = findViewById(R.id.update_upload);
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -69,9 +71,17 @@ public class admin_retrieve_spare_parts extends AppCompatActivity {
                     }
                 });
 
+                holder.delete.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
 
-                Picasso.get().load(model.getImage()).into(holder.profilePic);
-            }
+                        ref.child(model.getBrand()).removeValue();
+                    }
+                    });
+
+                        Picasso.get().load(model.getImage()).into(holder.profilePic);
+                    }
+
 
             @NonNull
             @Override
