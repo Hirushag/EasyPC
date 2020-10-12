@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 public class MyViewHolder extends RecyclerView.ViewHolder {
     TextView textViewID,getTextViewName,getTextViewName1,getTextViewName2;
     ImageView profilePic;
-    Button update;
+    Button update,delete;
     public MyViewHolder(@NonNull View itemView) {
         super(itemView);
         textViewID=itemView.findViewById(R.id.AtextView1ID_formal);
@@ -22,6 +22,6 @@ public class MyViewHolder extends RecyclerView.ViewHolder {
         getTextViewName2=itemView.findViewById(R.id.AtextView2ID_forma4);
         profilePic = itemView.findViewById(R.id.Acard_image_formal);
         update = itemView.findViewById(R.id.update);
-
+        delete = itemView.findViewById(R.id.delete);
     }
 }

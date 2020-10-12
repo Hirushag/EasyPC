@@ -70,6 +70,14 @@ public class admin_retrieve_laptop extends AppCompatActivity {
                     }
                 });
 
+                holder.delete.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        ref.child(model.getBrand()).removeValue();
+                    }
+                });
+
                 Picasso.get().load(model.getImage()).into(holder.profilePic);
             }
 
